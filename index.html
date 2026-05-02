@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CME | Celamor Malinao Electronics Repair</title>
+    <style>
+        :root {
+            --neon-blue: #00f2ff;
+            --dark-bg: #0a0a0c;
+            --card-bg: #161b22;
+            --text-main: #ffffff;
+            --text-dim: #b1b1b1;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Hero Section with Circuit Pattern */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid var(--neon-blue);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 600px;
+        }
+
+        /* Services Grid */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--neon-blue);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--neon-blue);
+            margin-top: 0;
+        }
+
+        /* Button Style */
+        .btn {
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            padding: 12px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--neon-blue);
+            color: black;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>CME</h1>
+        <p>CELAMOR MALINAO ELECTRONICS REPAIR</p>
+        <button class="btn">Get a Free Quote</button>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom: 40px;">Professional Technical Solutions</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Computing</h3>
+                <p>Motherboard diagnostics, hardware upgrades, and laptop screen replacements.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile Tech</h3>
+                <p>Precision repair for smartphones and tablets using high-tech tools.</p>
+            </div>
+            <div class="card">
+                <h3>Home Appliances</h3>
+                <p>Expert servicing for electric fans, rice cookers, and high-fidelity amplifiers.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Celamor Malinao Electronics Repair. Modern. Sleek. Reliable.
+    </footer>
+
+</body>
+</html>
